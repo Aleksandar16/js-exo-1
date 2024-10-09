@@ -7,6 +7,35 @@
 <body>
     <div>
         <script>
+            function nombreEnTexte(nb) {
+                const number9 = {
+                    9: "neuf",
+                    19: "dix-neuf",
+                    29: "vingt-neuf",
+                    39: "trente-neuf",
+                    49: "quarante-neuf",
+                    59: "cinquante-neuf",
+                    69: "soixante-neuf",
+                    79: "soixante-dix-neuf",
+                    89: "quatre-vingt-neuf",
+                    99: "quatre-vingt-dix-neuf"
+                };
+                return number9[nb];
+            }
+
+            for (let i = 1; i < 101; i++) {
+                if (i % 10 === 9) {
+                    console.log(nombreEnTexte(i));
+                } else if (i % 15 === 0) {
+                    console.log("FizzBuzz")
+                } else if (i % 3 === 0) {
+                    console.log("Fizz")
+                } else if (i % 5 === 0) {
+                    console.log("Buzz")
+                } else {
+                    console.log(i);
+                }
+            }
         </script>
     </div>
 </body>
