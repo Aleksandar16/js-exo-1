@@ -8,12 +8,15 @@
     <div>
         <script>
             // Partie 1 - Exo 1
-            let nb1 = prompt("Donnez un 1er nombre");
-            let nb2 = prompt("Donnez un 2ème nombre");
-            if(nb1 > nb2) {
-                console.log("Le plus grand des deux est" + nb1);
+            const nb1 = parseFloat(prompt("Donnez un 1er nombre"));
+            const nb2 = parseFloat(prompt("Donnez un 2ème nombre"));
+
+            if (nb1 > nb2) {
+                console.log("Le plus grand des deux est " + nb1);
+            } else if (nb1 < nb2) {
+                console.log("Le plus grand des deux est " + nb2);
             } else {
-                console.log("Le plus grand des deux est" + nb2);
+                console.log("Les deux nombres sont égaux.");
             }
         </script>
     </div>
