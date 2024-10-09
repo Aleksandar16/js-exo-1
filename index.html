@@ -7,6 +7,15 @@
 <body>
     <div>
         <script>
+            // Partie 1 - Exo 3
+            let nb1 = prompt("Donnez un 1er nombre");
+            let nb2 = prompt("Donnez un 2ème nombre");
+            let nb3 = prompt("Donnez un 3ème nombre");
+            const list = [nb1, nb2, nb3];
+            list.sort(function(a, b) {
+                return a - b;
+            });
+            console.log(list);
         </script>
     </div>
 </body>
