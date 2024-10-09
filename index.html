@@ -6,7 +6,41 @@
 <link rel="stylesheet" href="">
 <body>
     <div>
+        <p>Choisissez le numéro de l'exercice que vous vous voulez faire :</p>
+        <button onclick="p1e1()">Exercice 1</button>
+        <button onclick="p1e2()">Exercice 2</button>
+        <button onclick="p1e3()">Exercice 3</button>
         <script>
+            // Partie 2 - Exo 1
+            function p1e1() {
+                let nb1 = prompt("Donnez un 1er nombre");
+                let nb2 = prompt("Donnez un 2ème nombre");
+                if(nb1 > nb2) {
+                    console.log("Le plus grand des deux est " + nb1);
+                } else {
+                    console.log("Le plus grand des deux est " + nb2);
+                }
+            }
+            function p1e2() {
+                let nb1 = prompt("Donnez un 1er nombre");
+                let nb2 = prompt("Donnez un 2ème nombre");
+                let result = nb1 * nb2;
+                if(result < 0) {
+                    console.log("Le signe du produit est : -");
+                } else {
+                    console.log("Le signe du produit est : +");
+                }
+            }
+            function p1e3() {
+                let nb1 = prompt("Donnez un 1er nombre");
+                let nb2 = prompt("Donnez un 2ème nombre");
+                let nb3 = prompt("Donnez un 3ème nombre");
+                const list = [nb1, nb2, nb3];
+                list.sort(function(a, b) {
+                    return a - b;
+                });
+                console.log(list);
+            }
         </script>
     </div>
 </body>
